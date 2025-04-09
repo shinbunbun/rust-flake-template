@@ -8,9 +8,9 @@ endif
 PROJECT_NAME := $(shell basename $(shell pwd))
 
 init:
-	@echo ">>> project_name.txt を更新します"
-	@echo "$(PROJECT_NAME)" > project_name.txt
-	@echo "project_name.txt に '$(PROJECT_NAME)' を書き込みました。"
+	@echo ">>> project_name を更新します"
+	@echo "$(PROJECT_NAME)" > project_name
+	@echo "project_name に '$(PROJECT_NAME)' を書き込みました。"
 
 dev-env:
 	@$(MAKE) build-dev-env-container
