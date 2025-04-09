@@ -23,3 +23,8 @@ make dev-env
 ```
 
 を実行し、devcontainerを開く
+
+## 依存関係の追加について
+
+- Dockerで使いたい依存関係はflake.nixの`copyToRoot.path`に書く
+- devShellで使いたいものは`devShell.packages`に
