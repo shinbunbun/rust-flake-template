@@ -1,0 +1,21 @@
+{
+  "name": "DevContainer",
+  "image": "${localWorkspaceFolderBasename}:latest",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+        "rust-lang.rust-analyzer"
+      ]
+    }
+  },
+  "onCreateCommand": "apt update && apt install -y curl git",
+
+  "postCreateCommand": "",
+  // "remoteUser": "dev",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+  ]
+}
