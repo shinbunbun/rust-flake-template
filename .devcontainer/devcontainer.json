@@ -12,8 +12,6 @@
     }
   },
   "onCreateCommand": "apt update && apt install -y curl git",
-
-  "postCreateCommand": "",
   "mounts": [
     "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
   ]
