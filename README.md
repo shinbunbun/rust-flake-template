@@ -12,8 +12,8 @@ nix develop
 
 ### direnvを使う場合
 
-`.envrc`を作り、`use flake`と記述
-`direnv allow`を実行
+- `.envrc`を作り、`use flake`と記述
+- `direnv allow`を実行
 
 ## Docker, devcontainerを使う場合
 
